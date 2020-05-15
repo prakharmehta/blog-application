@@ -1,0 +1,26 @@
+<div class="form-group">
+    <div class="row">
+        <div class="input-field col s6">
+          <input required name="title" placeholder="Title" id="title" type="text" value="<%= article.title %>" class="validate">
+          <label for="title">Title</label>
+        </div>   
+    </div>
+    <div class="row">
+        <div class="input-field col s12">
+          <textarea name="description" id="textarea1" class="materialize-textarea"><%=article.description%></textarea>
+          <label for="textarea1">Description</label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="input-field col s12">
+          <textarea required name="markdown" id="textarea2" class="materialize-textarea"><%=article.markdown%></textarea>
+          <label for="textarea2">Markdown</label>
+        </div>
+    </div>
+    <div class="row">
+        <a href="/" class="waves-effect waves-light red btn">Cancel</a>
+        <button class="btn waves-effect waves-light" type="submit" name="action">Save
+            <i class="material-icons right">send</i>
+        </button>
+    </div>
+</div>
